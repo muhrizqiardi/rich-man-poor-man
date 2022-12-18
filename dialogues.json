@@ -2,38 +2,190 @@
   "characters": [
     {
       "id": "char-1",
-      "name": "Fulan",
-      "texture": "char-1-texture"
+      "name": "Aku"
     },
     {
       "id": "char-2",
-      "name": "Fulan 2",
-      "texture": "char-1-texture"
+      "name": "Ayah Miskin"
+    },
+    {
+      "id": "char-3",
+      "name": "Ayah Kaya"
+    },
+    {
+      "id": "char-4",
+      "name": "Fajar"
     }
   ],
   "dialogues": [
     {
-      "id": "dia-1",
-      "character": "char-1",
-      "content": "Bebek goreng",
-      "choices": [
-        {
-          "id": "dia-1--choice-1",
-          "content": "Choice 1",
-          "goto": "dia-2"
-        },
-        {
-          "id": "dia-1--choice-1",
-          "content": "Choice 2",
-          "goto": "dia-3"
-        }
-      ]
+      "id": "st-1",
+      "content": "Saya berumur 10 Tahun dan mempunyai dua ayah yaitu ayah saya yang asli dan ayah Teman saya, yang satu kaya dan yang satu miskin. Yang satu berpendidikan tinggi dan bijak; dia mempunyai ijazah Ph.D. serta telah menyelesaikan empat tahun pendidikan sarjananya hanya dalam masa kurang dari tiga tahun. Kemudian dia melanjutkan ke Stanford University, University of Chicago, dan Northwestern University, semuanya dengan biasiswa penuh. Ayah yang satu lagi tidak tamat pun pendidikan sekolah menengahnya.Mempunyai dua orang ayah yang memberi nasihat, menawarkan kepada saya pilihan sudut pandang yang berbeda satu lelaki yang kaya dan satu lagi dan lelaki yang miskin. Yang membedakan mereka berdua adalah Ayah Kaya mengajarkanku bagaimana Membuat uang bekerja untukku dan tidak menjadi Pegawai sedangkan yang satu lagi karena dia Hebat dalam pendidikan dia menjadi seorang ilmuab dan menyuruhku untuk pintar sepertinya dan bekerja Seperti dia juga. Saya hidup di lingkungan yang Kaya dimana teman-teman sekolahku bisa membeli barang-barang mewah dan baru tapi tidak dengan saya walaupun ayah saya seorang ilmuan dia tidak sekaya orang tua dari kebanyakan teman-temanku. ",
+      "next-dialogue-id": "st-2-act1"
     },
     {
-      "id": "dia-2",
+      "id": "st-2-act1",
+      "content": "Suatu saat saya bertanya pada Ayah Miskin ",
+      "next-dialogue-id": "st-2-dia1"
+    },
+    {
+      "id": "st-2-dia1",
       "character": "char-1",
-      "content": "lorem2",
-      "next-dialogue-id": "char-1"
+      "content": "Ayah Bisakah Ayah Mengajariku Cara Menjadi Orang Kaya?",
+      "next-dialogue-id": "st-2-act2"
+    },
+    {
+      "id": "st-2-act2",
+      "content": "Ayah nampak kebingungan karena dia tidak tau jawaban yang benar dan dia merespon  ",
+      "next-dialogue-id": "st-2-dia2"
+    },
+    {
+      "id": "st-2-dia2",
+      "character": "char-2",
+      "content": "Pakai Otakmu anakku Tetap di sekolah,Dapatkan nilai bagus Sehingga kamu dapat pekerjaan yang aman dan stabil",
+      "next-dialogue-id": "st-2-act3"
+    },
+    {
+      "id": "st-2-act3",
+      "content": "Inilah yang membuatnya menjadi Ayah Miskin karena memang saat dia aktif menjadi ilmuan dia bisa menghasilkan uang yang cukup banyak tapi pada akhirnya dia tidak memiliki Mindset untuk Berinvestasi dan hidup dalam zona kemiskinan karena hanya bekerjalah satu-satunya cara untuk mendapat kekayaan ayah miskin tidak pernah berfikir tentang passive income dan membuat uang bekerja untuknya.",
+      "next-dialogue-id": "st-2-dia3"
+    },
+    {
+      "id": "st-2-dia3",
+      "character": "char-1",
+      "content": "Aku Ingin tau cara Mencetak uang aku ingin tau bagaimana mengelola uang sehingga aku bisa kaya apakah ayah bisa ajarkan itu?",
+      "next-dialogue-id": "st-2-dia4"
+    },
+    {
+      "id": "st-2-dia4",
+      "character": "char-2",
+      "content": "Ayah tidak bisa mengajarkan tentang uang karena itu bukan keahlian ayah tapi teman kamu Fajar memiliki Ayah yang bisa membantumu karena dia memiliki Perusahaan dan dia tau bagaimana cara mengelola uang",
+      "next-dialogue-id": "st-3-act1"
+    },
+    {
+      "id": "st-3-act1",
+      "content": "Keesokan harinya aku bertemu dengan temanku dan menanyakan tentang ayahnya",
+      "next-dialogue-id": "st-3-dia1"
+    },
+    {
+      "id": "st-3-dia1",
+      "character": "char-1",
+      "content": "Fajar aku ingin belajar bagaimana Mengelola uang dari ayahmu apakah kau bisa tanyakan apakah dia mau Mengajariku?",
+      "next-dialogue-id": "st-3-dia2"
+    },
+    {
+      "id": "st-3-dia2",
+      "character": "char-4",
+      "content": "Aku juga tertarik akan hal itu aku akan tanyakan padanya kebetulan dia sedang ada di pabrik ayo kita kesana dan menanyakannya secara langsung",
+      "next-dialogue-id": "st-3-act2"
+    },
+    {
+      "id": "st-3-act2",
+      "content": "Kamipun berjalan menuju Pabrik dan Ketika sampai Pabrik kita bertemu dengan Ayah Fajar lalu dia bertanya padanya Ayah Kaya ",
+      "next-dialogue-id": "st-3-dia3"
+    },
+    {
+      "id": "st-3-dia3",
+      "character": "char-4",
+      "content": "Ayah Kami ingin belajar cara mengelola uang apakah kau Bisa mengajarkan ilmu itu kepada kami?",
+      "next-dialogue-id": "st-3-dia4"
+    },
+    {
+      "id": "st-3-dia4",
+      "character": "char-3",
+      "content": "Ayah bisa mengajarkan itu tapi dengan catatan ketika kalian sudah tidak kuat kalian tidak boleh mundur melainkan terus Mencoba",
+      "next-dialogue-id": "st-4-act1"
+    },
+    {
+      "id": "st-4-act1",
+      "content": "Ayah Kaya membuat saya bekerja selama seminggu Penuh setelah Pulang sekolah selama 1 Minggu Penuh dan dia memberiku Upah yang sangat kecil dan akupun mulai Bosan dan juga kesal sehingga aku menceritakan hal ini pada Ayah Miskin ",
+      "next-dialogue-id": "st-4-dia1"
+    },
+    {
+      "id": "st-4-dia1",
+      "character": "char-1",
+      "content": "Ayah aku sudah 1 minggu bekerja di Perusahaan milik Fajar namun aku di gaji kecil dan itu sangat melelahkan",
+      "next-dialogue-id": "st-4-dia2"
+    },
+    {
+      "id": "st-4-dia2",
+      "character": "char-2",
+      "content": "Berapa Upah yang kamu dapatkan dari pekerjaan itu?",
+      "next-dialogue-id": "st-4-dia3"
+    },
+    {
+      "id": "st-4-dia3",
+      "character": "char-1",
+      "content": "Hanya 5000 Rupiah untuk 5 jam",
+      "next-dialogue-id": "st-4-dia4"
+    },
+    {
+      "id": "st-4-dia4",
+      "character": "char-2",
+      "content": "KAU HARUS BERHENTI! Itu adalah eksploitasi mempekerjakan anak di bawah umur dan membayar dengan Sedikit upah dia sedang menipumu Jika dia mau mempekerjakanmu minta 50.000 Ribu untuk 5 jam jika tidak keluar saja",
+      "next-dialogue-id": "st-5-act1"
+    },
+    {
+      "id": "st-5-act1",
+      "content": "Melihat Respon yang seperti itu bagi anak 10 tahun akupun merasa di tipu dan tidak mendapatkan ilmu yang ayah kaya janjikan untukku sehingga besok aku berencanya bertemu dengannya di kantor dan meminta kenaikan gaji. Keesokan harinya kebetulan hari Sabtu dan biasanya ayah kaya ada di ruangannya aku langsung mendatangi ruangannya dan berbicara dengannya tentang kenaikan Gaji ",
+      "next-dialogue-id": "st-5-dia1"
+    },
+    {
+      "id": "st-5-dia1",
+      "character": "char-1",
+      "content": "Aku lelah bekerja untukmu dengan upah yang sedikit setiap hari aku bekerja selama 5 jam dan kau hanya membayarku 5000 rupiah itu sangat tidak manusiawi kau memanfaatkanku dengan iming-iming akan mengajarkanku ilmu bagaimana menjadi kaya tapi kau berbohong aku meminta kenaikan upah 50.000 rupiah untuk 5 jam atau aku akan berhenti dari pekerjaan ini",
+      "next-dialogue-id": "st-5-dia2"
+    },
+    {
+      "id": "st-5-dia2",
+      "character": "char-3",
+      "content": "Lihatlah Pabrik ini Penuh akan Manusia yang bekerja dan hanya satu orang pemilik yaitu saya coba kamu pikirkan apa yang membuat Saya dan Mereka Berbeda?",
+      "next-dialogue-id": "st-5-dia3"
+    },
+    {
+      "id": "st-5-dia3",
+      "character": "char-1",
+      "content": "Kau orang yang suka memanfaatkan orang lain!",
+      "next-dialogue-id": "st-5-dia4"
+    },
+    {
+      "id": "st-5-dia4",
+      "character": "char-3",
+      "content": "Tidak bukan itu, Saya berfikir untuk Uang bekerja untukku bukan aku yang bekerja untuk uang. Yang saya coba ajarkan di sini adalah bagaimana kamu menyikapi suatu pekerjaan jika kamu mulai di bayar dengan tinggi kamu akan merasakan kenyamanan,keamanan dan ketenangan lalu perlahan kamu akan berfikir seperti Pegawai dan kamu akan takut untuk mengambil resiko yang besar karena kamu nyaman hidup sebagai Pegawai. itu adalah aturan nomor 1 Jangan pernah mindset kamu atau pola pikir kamu seperti pegawai karena itu tidak bagus untuk seseorang yang kaya berfikirlah agar bagaimana cara uang bekerja untukmu",
+      "next-dialogue-id": "st-5-act2"
+    },
+    {
+      "id": "st-5-act2",
+      "content": "Ketika anak 10 Tahun di beri Pengertian seperti itu aku pun masih Bingung dan tidak paham apa maksudnya sehingga akupun menanyakan ",
+      "next-dialogue-id": "st-5-dia5"
+    },
+    {
+      "id": "st-5-dia5",
+      "character": "char-1",
+      "content": "Artinya saya harus bekerja dengan Gaji Kecil? ",
+      "next-dialogue-id": "st-5-dia6"
+    },
+    {
+      "id": "st-5-dia6",
+      "character": "char-3",
+      "content": "HAHAHAHA..... Bukan, kamu boleh bekerja tapi bukan Gaji yang kamu inginkan kamu bisa menggambil pengalaman,relasi dan masih banyak lagi tapi bukan GAJI yang kamu incar ketika kamu sudah mengincar atau menginginkan Gaji maka kamu akan berfikir seperti Pegawai. Ketika nanti kamu bekerja untuk siapapun jangan fokus pada gaji carilah ilmu sebanyak mungkin dan keluar ketika kamu rasa sudah tidak ada ilmu lagi di dalamnya dan gunakan ilmu yang kamu miliki untuk membuat Bisnismu sendiri ",
+      "next-dialogue-id": "st-5-act3"
+    },
+    {
+      "id": "st-5-act3",
+      "content": "lalu setelah mendengar itu semua aku pun membuka sudut pandang baru bahwa aku selama ini terlalu fokus dengan uang bukan pengalaman dan mencari potensi di dalamnya sehingga aku pun memutuskan untuk tetap bekerja dan mencari ilmu karena sebelumnya aku hanya mencari upah", 
+      "next-dialogue-id": "st-5-dia7"
+    },
+    {
+      "id": "st-5-dia7",
+      "character": "char-1",
+      "content": "Aku meminta maaf atas perkataanku sebelumnya aku tidak menyangka bahwa pemikiranku Salah selama ini karena aku tidak mencari apa yang bisa aku dapatkan selain Uang aku akan tetap bekerja untukmu tolong ajari aku lagi",
+      "next-dialogue-id": "st-5-dia8"
+    },
+    {
+      "id": "st-5-dia8",
+      "character": "char-3",
+      "content": "Untuk hari ini kamu libur saja coba pahami apa yang sedang aku bicarakan besok kamu adalah hari minggu kamu datang ke rumahku aku akan ajarkan hal lainnya"
     }
   ]
 }
