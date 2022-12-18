@@ -1,0 +1,39 @@
+{
+  "characters": [
+    {
+      "id": "char-1",
+      "name": "Fulan",
+      "texture": "char-1-texture"
+    },
+    {
+      "id": "char-2",
+      "name": "Fulan 2",
+      "texture": "char-1-texture"
+    }
+  ],
+  "dialogues": [
+    {
+      "id": "dia-1",
+      "character": "char-1",
+      "content": "Bebek goreng",
+      "choices": [
+        {
+          "id": "dia-1--choice-1",
+          "content": "Choice 1",
+          "goto": "dia-2"
+        },
+        {
+          "id": "dia-1--choice-1",
+          "content": "Choice 2",
+          "goto": "dia-3"
+        }
+      ]
+    },
+    {
+      "id": "dia-2",
+      "character": "char-1",
+      "content": "lorem2",
+      "next-dialogue-id": "char-1"
+    }
+  ]
+}
