@@ -35,6 +35,17 @@ func set_character_image(currentDialogue):
 	var cur_character_texture = character_textures[currentDialogue["character"]] if currentDialogue["character"] else ""
 	$DialogueBackground/TextureRect.texture = load(cur_character_texture)
 	
+func set_choice_button(currentDialogue):
+	var choiceButton = load("res://sprites/ChoiceButton.tscn").instance()
+	choiceButton.text = "Next"
+	choiceButton.goto = "end"
+	
+	$DialoguePanel/ChoicesScrollContainer/VBoxContainer.add_child(choiceButton)
+	
+	if currentDialogue["next-dialogue-id"]:
+		choiceButton.goto = currentDialogue["next-dialogue-id"]
+	
+	$DialoguePanel/ChoicesScrollContainer/VBoxContainer.add_child(choiceButton)
 
 func _ready():
 	var currentDialogue = find_arr_of_dict(dialogues, "id", Global.current_dialogue)
@@ -42,8 +53,4 @@ func _ready():
 	set_content(currentDialogue)
 	set_character_name(currentDialogue)
 	set_character_image(currentDialogue)
-		
-	var choiceButton = load("res://sprites/ChoiceButton.tscn").instance()
-	choiceButton.text = "Next"
-	choiceButton.goto = currentDialogue["next-dialogue-id"]
-	$DialoguePanel/ChoicesScrollContainer/VBoxContainer.add_child(choiceButton)
+	set_choice_button(currentDialogue)
